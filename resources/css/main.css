@@ -1,48 +1,45 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
 body {
-    line-height: 1;
+    background: #334B54;    background: #334B54;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.2;
+    color: #89C8E0;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+
 }
-ol, ul {
-    list-style: none;
+.logo {
+    text-align: center;
 }
-blockquote, q {
-    quotes: none;
+
+.flex-container {
+
+    display: flex;
+    justify-content: center;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+
+.form-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+
+.sign-in {
 }
+
+.control {
+    display: flex;
+}
+
+
+
+
+
+
+
