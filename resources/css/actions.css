@@ -1,0 +1,99 @@
+table {
+    width: 33%;
+    margin: 20px auto;
+    table-layout: auto;
+    background-color: #89C8E0;
+    color: #24343B;
+    border: 2px solid #000000;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: solid 1px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    flex-direction: column;
+}
+
+.top-bar {
+    margin-right: 25vw;
+    margin-left: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar #logo {
+    margin-bottom: 0;
+}
+
+.top-bar #logout {
+    position: absolute;
+    width: 200px;
+    align-self: flex-end;
+    margin-right: 20%;
+}
+
+.sub-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-selects {
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.user-input>input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.table {
+    margin-right: 25vw;
+}
+
+.input-container {
+    margin-left: 25vw;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.action-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button-container #back-button {
+    width: 200px;
+    margin-right: 25vw;
+}
+
+.button-container #action-button {
+    width: 200px;
+    margin-left: 25vw;
+
+}

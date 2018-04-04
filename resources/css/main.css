@@ -37,6 +37,7 @@ input:focus::placeholder{
 
 
 .redirect,
+#action-button,
 #logout,
 #sign-in,
 #sign-up {
@@ -57,6 +58,7 @@ input:focus::placeholder{
 }
 
 .redirect:hover,
+#action-button:hover,
 #logout:hover,
 #sign-in:hover,
 #sign-up:hover {
@@ -64,6 +66,7 @@ input:focus::placeholder{
 }
 
 .redirect:active,
+#action-button:active,
 #logout:active,
 #sign-in:active,
 #sign-up:active {
