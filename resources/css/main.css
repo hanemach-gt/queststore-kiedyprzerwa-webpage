@@ -1,41 +1,92 @@
-/* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
 body {
-    background: #334B54;    background: #334B54;
-    font-family: 'Varela Round', sans-serif;
-    line-height: 1.2;
-    color: #89C8E0;
-    padding: 5px 25px;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     margin: 0;
-    width: 100%;
-    align-items: center;
 
+    background: #334B54;
+    font-family: 'Varela Round', sans-serif;
+    color: #89C8E0;
 }
-.logo {
+
+h1, h3 {
+    color: white;
+}
+
+h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 40px;
+    padding: 8px;
+    font-size: 30px;
+    border-radius: 22px;
+    border: 1px solid;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+button {
+    margin-top: 10px;
+    align-self: center;
+    width: 75%;
+    border: none;
+    border-radius: 22px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background: #2196f3 center;
+    transition: background 0.8s;
+}
+
+button:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+button:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+
+
+.primary-row,
+.secondary-row,
+.tertiary-row {
     text-align: center;
 }
 
-.flex-container {
-
-    display: flex;
-    justify-content: center;
-}
-
-.form-container {
-    display: flex;
-    text-align: center;
+.form {
+    width: 400px;
+    display: inline-flex;
     flex-direction: column;
 }
 
-.sign-in {
+
+.footer {
+    background: #89C8E0;
+    color: #334B54;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+
 }
 
-.control {
-    display: flex;
-}
 
 
 
