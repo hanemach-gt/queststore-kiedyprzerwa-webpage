@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quest Store | Exp Levels</title>
+    <title>Quest Store | Admin Panel</title>
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../resources/css/main.css">
 </head>
 <body>
-<header class="main-header">
-    <h1 class="logo">Quest Store</h1>
-    <h2 class="panel-logo">Admin Panel</h2>
-    <h3 class="sub-panel-logo">Experience Levels</h3>
-</header>
-<nav class="panel-nav">
-    <a href="show-exp-levels.html">Show Experience Levels</a>
-    <a href="add-exp-level.html">Add Level of Experience</a>
-    <a href="delete-exp-level.html">Delete Level of Experience</a>
-    <a href="../admin-panel.html">Back</a>
-    <a href="../../index.html">Logout</a>
-</nav>
-
+<div class="column">
+    <div class="primary-row">
+        <h1>Quest Store</h1>
+        <h2>Admin Panel</h2>
+        <h3>Experience Levels</h3>
+    </div>
+    <div class="secondary-row">
+        <div class="nav-panel">
+            <button class="redirect" onclick="location.href = 'add-exp-level.html';" type="button">Add Level of Experience</button>
+            <button class="redirect" onclick="location.href = 'delete-exp-level.html';" type="button">Delete Level of Experience</button>
+            <button class="redirect" onclick="location.href = 'show-exp-levels.html';" type="button">Show Experience Levels</button>
+            <button class="redirect" onclick="location.href = '../admin-panel.html';" type="button">Back</button>
+            <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+        </div>
+    </div>
+</div>
 <footer class="footer">&copy;Codecool NWO 2018</footer>
 </body>
 </html>

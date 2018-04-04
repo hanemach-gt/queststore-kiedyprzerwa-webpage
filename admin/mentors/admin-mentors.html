@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quest Store | Mentors</title>
+    <title>Quest Store | Admin Panel</title>
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../resources/css/main.css">
 </head>
 <body>
-<header class="main-header">
-    <h1 class="logo">Quest Store</h1>
-    <h2 class="panel-logo">Admin Panel</h2>
-    <h3 class="sub-panel-logo">Mentors</h3>
-</header>
-<nav class="panel-nav">
-    <a href="edit-mentor.html">Edit Mentor</a>
-    <a href="delete-mentor.html">Delete Mentor</a>
-    <a href="mentor-profile-students.html">Profile and Students</a>
-    <a href="../admin-panel.html">Back</a>
-    <a href="../../index.html">Logout</a>
-</nav>
-
+<div class="column">
+    <div class="primary-row">
+        <h1>Quest Store</h1>
+        <h2>Admin Panel</h2>
+        <h3>Mentors</h3>
+    </div>
+    <div class="secondary-row">
+        <div class="nav-panel">
+            <button class="redirect" onclick="location.href = 'edit-mentor.html';" type="button">Edit Mentor</button>
+            <button class="redirect" onclick="location.href = 'delete-mentor.html';" type="button">Delete Mentor</button>
+            <button class="redirect" onclick="location.href = 'mentor-profile-students.html';" type="button">Profile and Students</button>
+            <button class="redirect" onclick="location.href = '../admin-panel.html';" type="button">Back</button>
+            <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+        </div>
+    </div>
+</div>
 <footer class="footer">&copy;Codecool NWO 2018</footer>
 </body>
 </html>

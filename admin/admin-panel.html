@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <title>Quest Store | Admin Panel</title>
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../resources/css/main.css">
 </head>
 <body>
-    <header class="main-header">
-        <h1 class="logo">Quest Store</h1>
-        <h2 class="panel-logo">Admin Panel</h2>
-    </header>
-    <nav class="panel-nav">
-            <a href="new_users/admin-new-users.html">New Users</a>
-            <a href="groups/admin-groups.html">Groups</a>
-            <a href="mentors/admin-mentors.html">Mentors</a>
-            <a href="exp_levels/admin-exp-levels.html">Experience Levels</a>
-            <a href="../index.html">Logout</a>
-    </nav>
-
-    <footer class="footer">&copy;Codecool NWO 2018</footer>
+<div class="column">
+    <div class="primary-row">
+        <h1>Quest Store</h1>
+        <h2>Admin Panel</h2>
+    </div>
+    <div class="secondary-row">
+        <div class="nav-panel">
+            <button class="redirect" onclick="location.href = 'new_users/admin-new-users.html';" type="button">New Users</button>
+            <button class="redirect" onclick="location.href = 'groups/admin-groups.html';" type="submit">Groups</button>
+            <button class="redirect" onclick="location.href = 'mentors/admin-mentors.html';" type="submit">Mentors</button>
+            <button class="redirect" onclick="location.href = 'exp_levels/admin-exp-levels.html';" type="submit">Experience Levels</button>
+            <button id="logout" onclick="location.href = '../index.html';" type="submit">Logout</button>
+        </div>
+    </div>
+</div>
+<footer class="footer">&copy;Codecool NWO 2018</footer>
 </body>
 </html>

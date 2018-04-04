@@ -10,7 +10,7 @@ body {
     color: #89C8E0;
 }
 
-h1, h3 {
+h1, h2, h3 {
     color: white;
 }
 
@@ -35,11 +35,15 @@ input:focus::placeholder{
     color: transparent;
 }
 
-button {
+
+.redirect,
+#logout,
+#sign-in,
+#sign-up {
     margin-top: 10px;
+    border: none;
     align-self: center;
     width: 75%;
-    border: none;
     border-radius: 22px;
     padding: 12px 18px;
     font-size: 16px;
@@ -52,18 +56,21 @@ button {
     transition: background 0.8s;
 }
 
-button:hover {
+.redirect:hover,
+#logout:hover,
+#sign-in:hover,
+#sign-up:hover {
     background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
 }
 
-button:active {
+.redirect:active,
+#logout:active,
+#sign-in:active,
+#sign-up:active {
     background-color: #6eb9f7;
     background-size: 100%;
     transition: background 0s;
 }
-
-
-
 
 .primary-row,
 .secondary-row,
@@ -77,20 +84,21 @@ button:active {
     flex-direction: column;
 }
 
-
 .footer {
     background: #89C8E0;
     color: #334B54;
     text-align: center;
     padding: 1em 0;
     margin-top: auto;
-
 }
 
+.nav-panel {
+    width: 400px;
+    display: inline-flex;
+    flex-direction: column;
+}
 
-
-
-
-
-
+.nav-panel>button {
+    font-weight: bold;
+}
 

@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quest Store | Groups</title>
+    <title>Quest Store | Admin Panel</title>
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../resources/css/main.css">
 </head>
 <body>
-<header class="main-header">
-    <h1 class="logo">Quest Store</h1>
-    <h2 class="panel-logo">Admin Panel</h2>
-    <h3 class="sub-panel-logo">Groups</h3>
-</header>
-<nav class="panel-nav">
-    <a href="create-group.html">Create Group</a>
-    <a href="delete-group.html">Delete Group</a>
-    <a href="assign-mentor-to-group.html">Assign Mentor</a>
-    <a href="detach-mentor-from-group.html">Detach Mentor</a>
-    <a href="../admin-panel.html">Back</a>
-    <a href="../../index.html">Logout</a>
-</nav>
-
+<div class="column">
+    <div class="primary-row">
+        <h1>Quest Store</h1>
+        <h2>Admin Panel</h2>
+        <h3>Groups</h3>
+    </div>
+    <div class="secondary-row">
+        <div class="nav-panel">
+            <button class="redirect" onclick="location.href = 'create-group.html';" type="button">Create Group</button>
+            <button class="redirect" onclick="location.href = 'delete-group.html';" type="button">Delete Group</button>
+            <button class="redirect" onclick="location.href = 'assign-mentor-to-group';" type="button">Assign Mentor</button>
+            <button class="redirect" onclick="location.href = 'detach-mentor-from-group';" type="button">Detach Mentor</button>
+            <button class="redirect" onclick="location.href = '../admin-panel.html';" type="button">Back</button>
+            <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+        </div>
+    </div>
+</div>
 <footer class="footer">&copy;Codecool NWO 2018</footer>
 </body>
 </html>
