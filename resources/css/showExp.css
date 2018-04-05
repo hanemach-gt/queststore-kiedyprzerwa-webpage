@@ -1,0 +1,18 @@
+.center{
+	margin:auto;
+	width: 50%;
+    padding: 10px;
+	clear:both;
+}
+
+.level-table{
+	float: none;
+}
+
+#nav-button{
+	float: none;
+}
+
+.panel-nav{
+	text-align: center;
+}
