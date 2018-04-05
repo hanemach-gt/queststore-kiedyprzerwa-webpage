@@ -2,49 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../resources/css/actions.css">
+    <link rel="stylesheet" href="../../resources/css/main.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <title>Quest Store | Mentor's Profile and Students</title>
 </head>
 <body>
-<header class="main-header">
-    <h1 class="logo">Quest Store</h1>
-    <h3 class="sub-panel-logo">Mentor's Profile and Students</h3>
-</header>
-<nav class="panel-nav">
-    <a href="admin-mentors.html">Back</a>
-    <a href="../../index.html">Logout</a>
-</nav>
-<div class="mentor-table table">
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Login</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Wick</td>
-            <td>mail@mail.com</td>
-            <td>123-345-678</td>
-        </tr>
-    </table>
-</div>
-<div class="students-table table">
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Login</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>Rick</td>
-            <td>Morty</td>
-            <td>studentmail@mail.com</td>
-            <td>987-123-212</td>
+<div class="flex-container">
+    <div class="top-bar">
+        <h1 id="logo">Quest Store</h1>
+        <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+    </div>
 
-        </tr>
-    </table>
+    <div class="action-flex-container">
+        <div class="sub-logo-break">
+            <h3>Mentor's Profile</h3>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Login</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Wick</td>
+                    <td>mail@mail.com</td>
+                    <td>123-345-678</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sub-logo-break">
+            <h3>Students</h3>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Login</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>Rick</td>
+                    <td>Morty</td>
+                    <td>studentmail@mail.com</td>
+                    <td>987-123-212</td>
+
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="redirect" id="back-button" onclick="location.href = 'admin-mentors.html';" type="button">Back</button>
+    </div>
 
 </div>
 </body>
