@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+    background: #334B54;
+    font-family: 'Varela Round', sans-serif;
+    color: #89C8E0;
+}
+
+header{
+	text-align: center;
+}
+
+h1, h3 {
+    color: white;
+}
+
+h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 20px;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 22px;
+    border: 1px solid;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+
+button {
+    margin-top: 10px;
+    border: none;
+    align-self: center;
+    width: 75%;
+    border-radius: 22px;
+    padding: 0 9px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background: #2196f3 center;
+    transition: background 0.8s;
+	height: 30px;
+}
+
+button:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+button:active{
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+nav{
+	margin: 5%;
+	display: block;
+	clear: both;
+}
+
+th,td{
+	background-color: rgba(190,230,240,.9);
+	border: 1px solid rgba(0,0,0,.7);
+	float: left;
+	display: inline-block;
+	width:100px;
+}
+
+tbody{
+	display:block;
+	width:100%;
+}
+
+tr{
+	display: block;
+	width: 100%;
+}
+
+table{
+
+	color: black;
+	clear: both;
+	display:inline-block;
+	width:100%;
+}
+
+#nav-button{
+	margin: 5px;
+	width: 170px;
+	display: inline-block;
+	float: left;
+}
+
+#add-lvl-form{
+	float: left;
+	display: inline-block;
+	width: 30%;
+	margin: 5% 10%;
+}
+
+#add-lvl-button{
+	width: 200px;
+}
+
+.footer {
+    background: #89C8E0;
+    color: #334B54;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+.level-table{
+	margin-top: 5%;
+	float: left;
+	display: inline-block;
+	width: 220px;
+
+}
+
