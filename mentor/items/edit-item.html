@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quest Store | Choose Item</title>
+    <link rel="stylesheet" href="../../resources/css/actions.css">
+    <link rel="stylesheet" href="../../resources/css/main.css">
+</head>
+<body>
+<div class="flex-container">
+    <div class="top-bar">
+        <h1 id="logo">Quest Store</h1>
+        <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+    </div>
+
+    <div class="sub-logo">
+        <h3>Choose Item</h3>
+    </div>
+
+    <div class="action-flex-container">
+        <div class="input-container">
+            <div class="input-desc">
+                <p>Select item by name (case sensitive):</p>
+            </div>
+
+            <div class="user-input">
+                <input type="text" placeholder="Item name" name="item_name">
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <p>Items:</p>
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>Sword</td>
+            </tr>
+            <tr>
+                <td>Another Sword</td>
+            </tr>
+            <tr>
+                <td>Third Sword</td>
+            </tr>
+            <tr>
+                <td>Lesser Sword</td>
+            </tr>
+            <tr>
+                <td>Dull Sword</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="button-container">
+        <button id="action-button" type="submit" onclick="location.href = 'edit-item-data.html';">Forward</button>
+        <button class="redirect" id="back-button" onclick="location.href = 'mentor-items';" type="button">Back</button>
+    </div>
+</div>
+</body>
+<footer class="footer">&copy;Codecool NWO 2018</footer>
+</html>
