@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <title>Quest Store | Create Group</title>
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../resources/css/actions.css">
+    <link rel="stylesheet" href="../../resources/css/main.css">
 </head>
 <body>
-<header class="main-header">
-    <h1 class="logo">Quest Store</h1>
-    <h3 class="sub-panel-logo">New Group Creation</h3>
-</header>
-<nav class="panel-nav">
-    <a href="admin-groups.html">Back</a>
-    <a href="../../index.html">Logout</a>
-</nav>
-<div>
-    <form>
-        Enter new group's name:<br>
-        <input type="text" placeholder="Group Name" name="groupName">
-    </form>
-    <button type="submit">Create Group</button>
-</div>
+<div class="flex-container">
+    <div class="top-bar">
+        <h1 id="logo">Quest Store</h1>
+        <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+    </div>
 
+    <div class="sub-logo">
+        <h3>Create Group</h3>
+    </div>
+    <div class="action-flex-container">
+        <div class="input-container">
+            <div class="input-desc">
+                <p>Enter new group's name:</p>
+            </div>
+
+            <div class="user-input">
+                <input type="text" placeholder="Group name" name="Group name">
+            </div>
+
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="action-button" type="submit">Create</button>
+        <button class="redirect" id="back-button" onclick="location.href = 'admin-groups.html';" type="button">Back</button>
+    </div>
+    <div class="back-button-container">
+    </div>
+</div>
 <footer class="footer">&copy;Codecool NWO 2018</footer>
 </body>
 </html>
