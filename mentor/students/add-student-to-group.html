@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quest Store | Add Student To Group</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../resources/css/actions.css">
+    <link rel="stylesheet" href="../../resources/css/main.css">
+</head>
+<body>
+<div class="flex-container">
+    <div class="top-bar">
+        <h1 id="logo">Quest Store</h1>
+        <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+    </div>
+
+    <div class="sub-logo">
+        <h3>Add Student To Group</h3>
+    </div>
+    <div class="action-flex-container">
+        <div class="input-container">
+            <div class="input-desc">
+                <p>Select Student by his Login (case sensitive):</p>
+            </div>
+
+            <div class="user-input">
+                <input type="text" placeholder="Login" name="Login">
+            </div>
+
+            <div class="input-desc">
+                <p>Select Group (case sensitive):</p>
+            </div>
+
+            <div class="user-input">
+                <input type="text" placeholder="Group" name="Group">
+            </div>
+
+        </div>
+        <div class="table">
+            <p>Students: <br></p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Login</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Wick</td>
+                    <td>mail@mail.com</td>
+                    <td>123-345-678</td>
+                </tr>
+            </table>
+            <p> Groups: <br></p>
+            <table>
+                <tr>
+                    <th>Group Name</th>
+                </tr>
+                <tr>
+                    <td>Masters</td>
+                </tr>
+                <tr>
+                    <td>Dragons</td>
+                </tr>
+                <tr>
+                    <td>Kings</td>
+                </tr>
+                <tr>
+                    <td>Others</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="action-button" type="submit">Add</button>
+        <button class="redirect" id="back-button" onclick="location.href = 'mentor-students.html';" type="button">Back</button>
+    </div>
+    <div class="back-button-container">
+    </div>
+</div>
+<footer class="footer">&copy;Codecool NWO 2018</footer>
+</body>
+</html>
