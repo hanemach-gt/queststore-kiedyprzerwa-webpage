@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quest Store | Promote Users</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../resources/css/actions.css">
+    <link rel="stylesheet" href="../../resources/css/main.css">
+</head>
+<body>
+<div class="flex-container">
+    <div class="top-bar">
+        <h1 id="logo">Quest Store</h1>
+        <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+    </div>
+
+    <div class="sub-logo">
+        <h3>New User Promotion</h3>
+    </div>
+    <div class="action-flex-container">
+        <div class="input-container">
+            <div class="input-desc">
+                <p>Select user by his Login (case sensitive)</p>
+            </div>
+
+            <div class="user-input">
+                <input type="text" placeholder="Login" name="Login">
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Login</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Wick</td>
+                    <td>mail@mail.com</td>
+                    <td>123-345-678</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="action-button" type="submit">Promote</button>
+        <button class="redirect" id="back-button" onclick="location.href = 'mentor-new-users.html';" type="button">Back</button>
+    </div>
+</div>
+<footer class="footer">&copy;Codecool NWO 2018</footer>
+</body>
+</html>
