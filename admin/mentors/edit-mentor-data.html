@@ -3,42 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Quest Store | Edit Mentor</title>
+    <link rel="stylesheet" href="../../resources/css/actions.css">
+    <link rel="stylesheet" href="../../resources/css/main.css">
 </head>
 <body>
-<header class="main-header">
-    <h1 class="logo">Quest Store</h1>
-    <h3 class="sub-panel-logo">Edit Mentor's Profile</h3>
-</header>
-<nav class="panel-nav">
-    <a href="edit-mentor.html">Back</a>
-    <a href="../../index.html">Logout</a>
-</nav>
-<form>
-    New name/login/etc: <br>
-    <input type="text" placeholder="New Attribute" name="attribute">
-</form>
-<button type="submit">Update</button>
-<button type="submit">Edit Name</button>
-<button type="submit">Edit Login</button>
-<button type="submit">Edit Email</button>
-<button type="submit">Edit Phone Number</button>
+    <div class="flex-container">
+        <div class="top-bar">
+            <h1 id="logo">Quest Store</h1>
+            <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+        </div>
 
-<div class="mentor-table table">
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Login</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Wick</td>
-            <td>mail@mail.com</td>
-            <td>123-345-678</td>
-        </tr>
-    </table>
-</div>
+        <div class="sub-logo">
+            <h3>Edit Mentor's Profile</h3>
+        </div>
+        <div class="action-flex-container">
+            <div class="input-container">
+                <div class="input-desc">
+                    <p>New name/login/etc:</p>
+                </div>
+
+                <div class="user-input">
+                    <input type="text" placeholder="New Attribute" name="attribute">
+                </div>
+                <button type="submit">Update Name</button>
+                <button type="submit">Update Login</button>
+                <button type="submit">Update Email</button>
+                <button type="submit">Update Phone Number</button>
+            </div>
+
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Login</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Wick</td>
+                        <td>mail@mail.com</td>
+                        <td>123-345-678</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="redirect" id="back-button" onclick="location.href = 'edit-mentor.html';" type="button">Back</button>
+        </div>
+    </div>
 </body>
 <footer class="footer">&copy;Codecool NWO 2018</footer>
 </html>
