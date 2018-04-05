@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Quest Store | Add Level</title>
-</head>
-<body>
-<header class="main-header">
-    <h1 class="logo">Quest Store</h1>
-    <h3 class="sub-panel-logo">Add Level of Experience</h3>
-</header>
-<nav class="panel-nav">
-    <a href="admin-exp-levels.html">Back</a>
-    <a href="../../index.html">Logout</a>
-</nav>
-<div>
-    <form>
-        Enter new level name:<br>
-        <input type="text" placeholder="Level Name" name="levelName">
-    </form>
-    <form>
-        Enter new level value:<br>
-        <input type="text" placeholder="Experience Value" name="levelValue">
-    </form>
-    <button type="submit">Add Level</button>
-</div>
-<div class="level-table table">
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Value</th>
-        </tr>
-        <tr>
-            <td>Low</td>
-            <td>200</td>
-        </tr>
-        <tr>
-            <td>Medium</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td>Pro</td>
-            <td>2000</td>
-        </tr>
-        <tr>
-            <td>God</td>
-            <td>5000</td>
-        </tr>
-    </table>
-</div>
-</body>
-<footer class="footer">&copy;Codecool NWO 2018</footer>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../../resources/css/addExpLevel.css">
+		<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+		<title>Quest Store | Add Level</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="logo">Quest Store</h1>
+			<h3 class="sub-panel-logo">Add Level of Experience</h3>
+		</header>
+
+		<div>
+			<div id="add-lvl-form">
+				<form>
+					Enter new level name:<br>
+					<input type="text" placeholder="Level Name" name="levelName">
+				</form>
+				<form>
+					Enter new level value:<br>
+					<input type="text" placeholder="Experience Value" name="levelValue">
+				</form>
+				<button type="submit" id="add-lvl-button">Add Level</button>
+			</div>
+			
+			<div class="level-table">
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td>Low</td>
+						<td>200</td>
+					</tr>
+					<tr>
+						<td>Medium</td>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td>Pro</td>
+						<td>2000</td>
+					</tr>
+					<tr>
+						<td>God</td>
+						<td>5000</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<nav class="panel-nav">
+
+			<button class="redirect" id="nav-button" onclick="location.href = 'admin-exp-levels.html';" type="button">Back</button>
+			<button class="redirect" id="nav-button" onclick="location.href = '../../index.html';" type="button">Logout</button>
+
+		</nav>
+	</body>
+	<footer class="footer">&copy;Codecool NWO 2018</footer>
 </html>
