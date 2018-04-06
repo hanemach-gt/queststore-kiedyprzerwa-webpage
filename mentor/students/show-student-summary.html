@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quest Store | Show Student Summary</title>
+    <link rel="stylesheet" href="../../resources/css/actions.css">
+    <link rel="stylesheet" href="../../resources/css/main.css">
+</head>
+<body>
+<div class="flex-container">
+    <div class="top-bar">
+        <h1 id="logo">Quest Store</h1>
+        <button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+    </div>
+
+    <div class="sub-logo">
+        <h3>Student Summary</h3>
+    </div>
+
+    <div class="action-flex-container">
+        <div class="input-container">
+            <div class="input-desc">
+                <p>Select student to show his/hrs items (case sensitive):</p>
+            </div>
+
+            <div class="user-input">
+                <input type="text" placeholder="Quest name" name="quest_name">
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td>First Student</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>Another Student</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Third Student</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Sic Student</td>
+                <td>9001</td>
+            </tr>
+            <tr>
+                <td>Dunk Student</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="button-container">
+        <button id="action-button" type="submit" onclick="location.href = 'show-student-summary-item-data.html';">Show items</button>
+        <button class="redirect" id="back-button" onclick="location.href = 'mentor-students.html';" type="button">Back</button>
+    </div>
+</div>
+</body>
+<footer class="footer">&copy;Codecool NWO 2018</footer>
+</html>
