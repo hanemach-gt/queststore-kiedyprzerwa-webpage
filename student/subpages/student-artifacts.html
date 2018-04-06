@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="../../resources/css/main.css">
-		<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-		<title>Quest Store | Buy Artifact</title>
-	</head>
-	<body>
-	<div class="flex-container">
-		<center>
-			<h1 id="logo">Quest Store</h1>
-			<h3>Buy Artifact</h3>
-		</center>
+<head>
+	<meta charset="UTF-8">
+	<title>Quest Store | Artifact Store</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../../resources/css/actions.css">
+	<link rel="stylesheet" href="../../resources/css/main.css">
+</head>
+<body>
+<div class="flex-container">
+	<div class="top-bar">
+		<h1 id="logo">Quest Store</h1>
+		<button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+	</div>
 
-		<center>
-			<div style="width:50%; max-width:400px; min-width:200px;">
-				<button class="redirect" id="nav-button" onclick="location.href = '../../index.html';" type="submit">Logout</button>
-				<button class="redirect" id="nav-button" onclick="location.href = '../student-panel.html';" type="submit">Back</button>
+	<div class="sub-logo">
+		<h3>Artifact Store</h3>
+	</div>
+	<div class="action-flex-container">
+		<div class="input-container">
+			<div class="input-desc">
+				<p>Enter artifact's name (case sensitive).</p>
 			</div>
-		</center>
 
-		<div class="action-flex-container">
-			<div class="input-container shop">
-
-				<div class="input-desc">
-					<p>Enter artifact name:</p>
-				</div>
-				<div class="user-input" style="display:inline-block;">
-					<input type="text" placeholder="Artifact Name" name="artifactName">
-				</div>
-				<div style="display: inline-block;">
-					<input type="checkbox" style="float: left; margin-top: 5px;"name="buyByGroup">ByGroup
-				</div>
-				<div class="buy-button">
-					<button class="redirect" type="submit">Buy</button>
-				</div>
+			<div class="user-input">
+				<input type="text" placeholder="Artifact Name" name="artifactName">
 			</div>
-			
-			<div class="center">
-				<div class="item-table" style="height:368px;">
-					<div class="row" id="heading">
-						<div class="name">Name</div>
-						<div class="description">Description</div>
-					</div>
-					<div class="row">
-						<div class="name">Item 1</div>
-						<div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-					</div>
-					<div class="row">
-						<div class="name">Item 2</div>
-						<div class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-					</div>
-					<div class="row">
-						<div class="name">Item 3</div>
-						<div class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-					</div>
-					<div class="row">
-						<div class="name">Item 4</div>
-						<div class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-					</div>
-				</div>
-			</div>	
 
+			<div class="radio-selects">
+				<label>Personal Purchase</label>
+				<input type="radio" name="Type" value="personalPurchase">
+
+				<label>Group Purchase</label>
+				<input type="radio" name="Type" value="Group Purchase">
+			</div>
 		</div>
-	</body>
-	<footer class="footer">&copy;Codecool NWO 2018</footer>
+		<div class="table">
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Item 1</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 2</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 3</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 4</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 5</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 6</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 7</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 8</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 9</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="button-container">
+		<button id="action-button" type="submit">Purchase</button>
+		<button class="redirect" id="back-button" onclick="location.href = '../student-panel.html';" type="button">Back</button>
+	</div>
+</div>
+<footer class="footer">&copy;Codecool NWO 2018</footer>
+</body>
 </html>
