@@ -75,6 +75,7 @@ td {
     display: none;
 }
 
+.wallet,
 .input-container {
     margin-left: 25vw;
     display: inline-flex;
