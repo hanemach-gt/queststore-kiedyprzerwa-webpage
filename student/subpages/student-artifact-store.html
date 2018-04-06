@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quest Store | Artifact Store</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../../resources/css/actions.css">
+	<link rel="stylesheet" href="../../resources/css/main.css">
+</head>
+<body>
+<div class="flex-container">
+	<div class="top-bar">
+		<h1 id="logo">Quest Store</h1>
+		<button id="logout" onclick="location.href = '../../index.html';" type="submit">Logout</button>
+	</div>
+
+	<div class="sub-logo">
+		<h3>Artifact Store</h3>
+	</div>
+	<div class="action-flex-container">
+		<div class="input-container">
+			<div class="input-desc">
+				<p>Enter artifact's name (case sensitive).</p>
+			</div>
+
+			<div class="user-input">
+				<input type="text" placeholder="Artifact Name" name="artifactName">
+			</div>
+
+			<div class="radio-selects">
+				<label>Personal Purchase</label>
+				<input type="radio" name="Type" value="personalPurchase">
+
+				<label>Group Purchase</label>
+				<input type="radio" name="Type" value="Group Purchase">
+			</div>
+		</div>
+		<div class="table">
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Item 1</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 2</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 3</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 4</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 5</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 6</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 7</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 8</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+				<tr>
+					<td>Item 9</td>
+					<td>Lorem ipsum dolor sit amet</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="button-container">
+		<button id="action-button" type="submit">Purchase</button>
+		<button class="redirect" id="back-button" onclick="location.href = '../student-panel.html';" type="button">Back</button>
+	</div>
+</div>
+<footer class="footer">&copy;Codecool NWO 2018</footer>
+</body>
+</html>
